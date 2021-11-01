@@ -1,5 +1,5 @@
 export const apiConfig = {
-  baseUrl: process.env.API_BASE_URL || "",
-  token: process.env.API_TOKEN || "",
-  active: process.env.API_ACTIVE || false,
+  baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || "",
+  token: process.env.NEXT_PUBLIC_API_TOKEN || "",
+  active: process.env.NEXT_PUBLIC_API_ACTIVE || false,
 };
