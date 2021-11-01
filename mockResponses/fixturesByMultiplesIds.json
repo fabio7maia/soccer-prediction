@@ -1,0 +1,207 @@
+{
+  "data": [
+    {
+      "id": 18117820,
+      "league_id": 271,
+      "season_id": 18334,
+      "stage_id": 77453568,
+      "round_id": 246637,
+      "group_id": null,
+      "aggregate_id": null,
+      "venue_id": 214349,
+      "referee_id": 19024,
+      "localteam_id": 1789,
+      "visitorteam_id": 2905,
+      "winner_team_id": null,
+      "weather_report": null,
+      "commentaries": false,
+      "attendance": null,
+      "pitch": null,
+      "details": null,
+      "neutral_venue": false,
+      "winning_odds_calculated": false,
+      "formations": {
+        "localteam_formation": null,
+        "visitorteam_formation": null
+      },
+      "scores": {
+        "localteam_score": 0,
+        "visitorteam_score": 0,
+        "localteam_pen_score": null,
+        "visitorteam_pen_score": null,
+        "ht_score": null,
+        "ft_score": null,
+        "et_score": null,
+        "ps_score": null
+      },
+      "time": {
+        "status": "NS",
+        "starting_at": {
+          "date_time": "2021-11-01 18:00:00",
+          "date": "2021-11-01",
+          "time": "18:00:00",
+          "timestamp": 1635789600,
+          "timezone": "UTC"
+        },
+        "minute": null,
+        "second": null,
+        "added_time": null,
+        "extra_minute": null,
+        "injury_time": null
+      },
+      "coaches": {
+        "localteam_coach_id": 465296,
+        "visitorteam_coach_id": 458696
+      },
+      "standings": { "localteam_position": 7, "visitorteam_position": 9 },
+      "assistants": {
+        "first_assistant_id": 11611,
+        "second_assistant_id": 34085,
+        "fourth_official_id": 14811
+      },
+      "leg": "1/1",
+      "colors": null,
+      "deleted": false,
+      "is_placeholder": false,
+      "localTeam": {
+        "data": {
+          "id": 1789,
+          "legacy_id": 520,
+          "name": "OB",
+          "short_code": "ODE",
+          "twitter": null,
+          "country_id": 320,
+          "national_team": false,
+          "founded": 1889,
+          "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/29/1789.png",
+          "venue_id": 214349,
+          "current_season_id": 18334,
+          "is_placeholder": false
+        }
+      },
+      "visitorTeam": {
+        "data": {
+          "id": 2905,
+          "legacy_id": 629,
+          "name": "AGF",
+          "short_code": "AGF",
+          "twitter": null,
+          "country_id": 320,
+          "national_team": false,
+          "founded": 1902,
+          "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/25/2905.png",
+          "venue_id": 1708,
+          "current_season_id": 18334,
+          "is_placeholder": false
+        }
+      },
+      "probability": {
+        "data": {
+          "fixture_id": 18117820,
+          "predictions": {
+            "btts": 56.325,
+            "over_2_5": 52.807,
+            "under_2_5": 47.19,
+            "over_3_5": 30.574,
+            "under_3_5": 69.422,
+            "HT_over_0_5": 77.553,
+            "HT_under_0_5": 22.444,
+            "HT_over_1_5": 44.017,
+            "HT_under_1_5": 55.979,
+            "AT_over_0_5": 72.625,
+            "AT_under_0_5": 27.372,
+            "AT_over_1_5": 37.16,
+            "AT_under_1_5": 62.836,
+            "home": 41.902,
+            "away": 32.901,
+            "draw": 25.194,
+            "correct_score": {
+              "0-0": 6.144,
+              "0-1": 7.96,
+              "0-2": 5.157,
+              "0-3": 2.227,
+              "0-4": 0.721,
+              "0-5": 0.187,
+              "0-6": 0.04,
+              "0-7": 0.007,
+              "0-8": 0.001,
+              "1-0": 9.179,
+              "1-1": 11.89,
+              "1-2": 7.705,
+              "1-3": 3.328,
+              "1-4": 1.078,
+              "1-5": 0.279,
+              "1-6": 0.06,
+              "1-7": 0.011,
+              "1-8": 0.002,
+              "2-0": 6.857,
+              "2-1": 8.885,
+              "2-2": 5.756,
+              "2-3": 2.486,
+              "2-4": 0.805,
+              "2-5": 0.209,
+              "2-6": 0.045,
+              "2-7": 0.008,
+              "2-8": 0.001,
+              "3-0": 3.415,
+              "3-1": 4.425,
+              "3-2": 2.866,
+              "3-3": 1.238,
+              "3-4": 0.401,
+              "3-5": 0.104,
+              "3-6": 0.022,
+              "3-7": 0.004,
+              "3-8": 0.001,
+              "4-0": 1.276,
+              "4-1": 1.653,
+              "4-2": 1.071,
+              "4-3": 0.462,
+              "4-4": 0.15,
+              "4-5": 0.039,
+              "4-6": 0.008,
+              "4-7": 0.002,
+              "5-0": 0.381,
+              "5-1": 0.494,
+              "5-2": 0.32,
+              "5-3": 0.138,
+              "5-4": 0.045,
+              "5-5": 0.012,
+              "5-6": 0.003,
+              "6-0": 0.095,
+              "6-1": 0.123,
+              "6-2": 0.08,
+              "6-3": 0.034,
+              "6-4": 0.011,
+              "6-5": 0.003,
+              "6-6": 0.001,
+              "7-0": 0.02,
+              "7-1": 0.026,
+              "7-2": 0.017,
+              "7-3": 0.007,
+              "7-4": 0.002,
+              "7-5": 0.001,
+              "8-0": 0.004,
+              "8-1": 0.005,
+              "8-2": 0.003,
+              "8-3": 0.001,
+              "9-0": 0.001,
+              "9-1": 0.001,
+              "9-2": 0.001
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "plans": [
+      {
+        "name": "Football Free Plan",
+        "features": "Standard",
+        "request_limit": "180,60",
+        "sport": "Soccer"
+      }
+    ],
+    "sports": [{ "id": 1, "name": "Soccer", "current": true }]
+  }
+}

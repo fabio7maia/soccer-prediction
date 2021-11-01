@@ -1,0 +1,191 @@
+{
+  "data": [
+    {
+      "id": 53,
+      "legacy_id": 152,
+      "name": "Celtic",
+      "short_code": "CEL",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1888,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/21/53.png",
+      "venue_id": 8909,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 62,
+      "legacy_id": 703,
+      "name": "Rangers",
+      "short_code": "RAN",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1873,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/30/62.png",
+      "venue_id": 8914,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 66,
+      "legacy_id": 702,
+      "name": "Hibernian",
+      "short_code": "HIB",
+      "twitter": "@HibernianFC",
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1875,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/2/66.png",
+      "venue_id": 8946,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 180,
+      "legacy_id": 696,
+      "name": "Kilmarnock",
+      "short_code": "KIL",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1869,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/20/180.png",
+      "venue_id": 8906,
+      "current_season_id": 18372,
+      "is_placeholder": false
+    },
+    {
+      "id": 246,
+      "legacy_id": 698,
+      "name": "Ross County",
+      "short_code": "RSC",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1929,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/22/246.png",
+      "venue_id": 8908,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 258,
+      "legacy_id": 710,
+      "name": "Livingston",
+      "short_code": "LIV",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1943,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/2/258.png",
+      "venue_id": 8943,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 273,
+      "legacy_id": 690,
+      "name": "Aberdeen",
+      "short_code": "ABE",
+      "twitter": "@AberdeenFC",
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1903,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/17/273.png",
+      "venue_id": 8928,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 282,
+      "legacy_id": 692,
+      "name": "Dundee United",
+      "short_code": "DUD",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1909,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/26/282.png",
+      "venue_id": 8947,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 309,
+      "legacy_id": 700,
+      "name": "Motherwell",
+      "short_code": "MOT",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1886,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/21/309.png",
+      "venue_id": 8922,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 338,
+      "legacy_id": 693,
+      "name": "Hamilton Academical",
+      "short_code": "HMA",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1874,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/18/338.png",
+      "venue_id": 288196,
+      "current_season_id": 18372,
+      "is_placeholder": false
+    },
+    {
+      "id": 496,
+      "legacy_id": 699,
+      "name": "St. Mirren",
+      "short_code": "STM",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1877,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/16/496.png",
+      "venue_id": 8879,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    },
+    {
+      "id": 734,
+      "legacy_id": 695,
+      "name": "St. Johnstone",
+      "short_code": "STJ",
+      "twitter": null,
+      "country_id": 1161,
+      "national_team": false,
+      "founded": 1885,
+      "logo_path": "https://cdn.sportmonks.com/images/soccer/teams/30/734.png",
+      "venue_id": 219,
+      "current_season_id": 18369,
+      "is_placeholder": false
+    }
+  ],
+  "meta": {
+    "plans": [
+      {
+        "name": "Football Free Plan",
+        "features": "Standard",
+        "request_limit": "180,60",
+        "sport": "Soccer"
+      }
+    ],
+    "sports": [{ "id": 1, "name": "Soccer", "current": true }],
+    "pagination": {
+      "total": 12,
+      "count": 12,
+      "per_page": 100,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": []
+    }
+  }
+}
