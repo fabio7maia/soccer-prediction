@@ -22,12 +22,6 @@ export const useFetch = <
 
   url = url.replace("{{api_token}}", token);
 
-  console.log("useFetch", {
-    baseUrl,
-    token,
-    url,
-  });
-
   return React.useMemo(
     () => ({
       fetch: (input?: TInput): Promise<TOutput> => {

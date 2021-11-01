@@ -78,20 +78,20 @@ export const Predictions: React.FC = () => {
 
       {games?.map((x) => (
         <React.Fragment key={x.id}>
-          <div>
-            <img
+          <div className="align-middle flex">
+            <Image
               src={x.localTeam.data.logo_path}
-              style={{ display: "unset" }}
-              width="30px"
-              height="20px"
+              // style={{ display: "unset" }}
+              width="40px"
+              height="25px"
               alt="home team"
             />{" "}
             {x.localTeam.data.name} vs {x.visitorTeam.data.name}{" "}
-            <img
+            <Image
               src={x.visitorTeam.data.logo_path}
-              style={{ display: "unset" }}
-              width="30px"
-              height="20px"
+              // style={{ display: "unset" }}
+              width="40px"
+              height="25px"
               alt="away team"
             />
           </div>
