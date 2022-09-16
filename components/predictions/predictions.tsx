@@ -27,7 +27,7 @@ const probabilities = [
 ];
 
 const getBackgroundColor = (value: number): string => {
-  return value > 85 ? "#00ff00" : value > 60 ? "#0000ff" : "#ff0000";
+  return value > 80 ? "#00ff00" : value > 65 ? "#0000ff" : "#ff0000";
 };
 
 export const Predictions: React.FC = () => {
@@ -65,35 +65,97 @@ export const Predictions: React.FC = () => {
     >
       {/* <div></div>
         <div style={{ gridColumn: "2 / 14" }}>Probabilities</div> */}
-
       <div></div>
-      <div style={{ gridColumn: "2 / 9" }}>Home + Away team</div>
-      <div style={{ gridColumn: "10 / 13" }}>Home team</div>
-      <div style={{ gridColumn: "14 / 18" }}>Away team</div>
+      <div
+        style={{
+          gridColumn: "2 / 10",
+          borderLeft: "2px solid #fff",
+          textAlign: "center",
+        }}
+      >
+        Home + Away team
+      </div>
+      <div
+        style={{
+          gridColumn: "10 / 14",
+          borderLeft: "2px solid #fff",
+          textAlign: "center",
+        }}
+      >
+        Home team
+      </div>
+      <div
+        style={{
+          gridColumn: "14 / 18",
+          borderLeft: "2px solid #fff",
+          borderRight: "2px solid #fff",
+          textAlign: "center",
+        }}
+      >
+        Away team
+      </div>
 
-      <div>Game</div>
+      <div style={{ borderBottom: "2px solid #fff" }}>Game</div>
       {probabilities.map((p) => (
-        <div key={p.key}>{p.value}</div>
+        <div
+          style={{
+            borderBottom: "2px solid #fff",
+          }}
+          key={p.key}
+        >
+          {p.value}
+        </div>
       ))}
 
-      {games?.map((x) => (
+      {games?.map((x, index) => (
         <React.Fragment key={x.id}>
-          <div className="align-middle flex">
-            <Image
+          <div
+            className={`align-middle flex space-x-4 ${
+              index < games.length - 1 ? "border-b-2" : undefined
+            }`}
+          >
+            {/* <Image
               src={x.localTeam.data.logo_path}
               // style={{ display: "unset" }}
               width="40px"
               height="25px"
               alt="home team"
-            />{" "}
-            {x.localTeam.data.name} vs {x.visitorTeam.data.name}{" "}
-            <Image
+            />{" "} */}
+            <div style={{ fontSize: "8px", width: "36px" }}>
+              {x.time.starting_at.date_time.substring(5, 16)}
+            </div>
+            <div
+              style={{
+                color: "orange",
+                margin: "0 4px 0 0",
+                textOverflow: "ellipsis",
+                width: "40%",
+                overflow: "hidden",
+                height: "24px",
+              }}
+            >
+              {x.localTeam.data.name}
+            </div>
+            vs
+            <div
+              style={{
+                color: "yellow",
+                margin: "0 0 0 4px",
+                textOverflow: "ellipsis",
+                width: "40%",
+                overflow: "hidden",
+                height: "24px",
+              }}
+            >
+              {x.visitorTeam.data.name}
+            </div>
+            {/* <Image
               src={x.visitorTeam.data.logo_path}
               // style={{ display: "unset" }}
               width="40px"
               height="25px"
               alt="away team"
-            />
+            /> */}
           </div>
 
           {probabilities.map((p) => (
@@ -103,6 +165,8 @@ export const Predictions: React.FC = () => {
                 backgroundColor: getBackgroundColor(
                   x.probability?.data?.predictions?.[p.key] || 0
                 ),
+                borderBottom:
+                  index < games.length - 1 ? "2px solid #fff" : undefined,
               }}
             >
               {Math.round(x.probability?.data?.predictions?.[p.key] || 0)}
@@ -110,6 +174,44 @@ export const Predictions: React.FC = () => {
           ))}
         </React.Fragment>
       ))}
+      <div style={{ borderTop: "2px solid #fff" }}>Game</div>
+
+      {probabilities.map((p) => (
+        <div style={{ borderTop: "2px solid #fff" }} key={p.key}>
+          {p.value}
+        </div>
+      ))}
+
+      <div></div>
+
+      <div
+        style={{
+          gridColumn: "2 / 10",
+          borderLeft: "2px solid #fff",
+          textAlign: "center",
+        }}
+      >
+        Home + Away team
+      </div>
+      <div
+        style={{
+          gridColumn: "10 / 14",
+          borderLeft: "2px solid #fff",
+          textAlign: "center",
+        }}
+      >
+        Home team
+      </div>
+      <div
+        style={{
+          gridColumn: "14 / 18",
+          borderLeft: "2px solid #fff",
+          borderRight: "2px solid #fff",
+          textAlign: "center",
+        }}
+      >
+        Away team
+      </div>
     </div>
   );
 };
