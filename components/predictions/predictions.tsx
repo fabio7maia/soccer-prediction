@@ -100,6 +100,7 @@ export const Predictions: React.FC = () => {
         <div
           style={{
             borderBottom: "2px solid #fff",
+            textAlign: "center",
           }}
           key={p.key}
         >
@@ -167,6 +168,7 @@ export const Predictions: React.FC = () => {
                 ),
                 borderBottom:
                   index < games.length - 1 ? "2px solid #fff" : undefined,
+                textAlign: "center",
               }}
             >
               {Math.round(x.probability?.data?.predictions?.[p.key] || 0)}
