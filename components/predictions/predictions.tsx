@@ -27,6 +27,8 @@ const probabilities = [
 ];
 
 const getBackgroundColor = (value: number): string => {
+  value = Math.round(value || 0);
+
   return value >= 80 ? "#00ff00" : value >= 65 ? "#0000ff" : "#ff0000";
 };
 
