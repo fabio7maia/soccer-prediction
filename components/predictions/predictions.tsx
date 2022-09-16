@@ -27,7 +27,7 @@ const probabilities = [
 ];
 
 const getBackgroundColor = (value: number): string => {
-  return value > 80 ? "#00ff00" : value > 65 ? "#0000ff" : "#ff0000";
+  return value >= 80 ? "#00ff00" : value >= 65 ? "#0000ff" : "#ff0000";
 };
 
 export const Predictions: React.FC = () => {
