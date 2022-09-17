@@ -3,8 +3,8 @@ import { useFetchFixturesByMultipleIds, useFetchValueBets } from "@services";
 
 const probabilities = [
   { key: "home", value: "1" },
-  { key: "away", value: "X" },
-  { key: "draw", value: "2" },
+  { key: "draw", value: "X" },
+  { key: "away", value: "2" },
 
   { key: "btts", value: "btts" },
 
