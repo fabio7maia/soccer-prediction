@@ -1,7 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import { useFetchFixturesByMultipleIds, useFetchValueBets } from "@services";
-import { mocksResponses } from "../../mockResponses";
 
 const probabilities = [
   { key: "home", value: "1" },
@@ -32,30 +30,11 @@ const getBackgroundColor = (value: number): string => {
   return value >= 80 ? "#00ff00" : value >= 65 ? "#0000ff" : "#ff0000";
 };
 
-export const Predictions: React.FC = () => {
-  const { fetch: fetchValueBets } = useFetchValueBets();
-  const { fetch: fetchFixturesByMultipleIds } = useFetchFixturesByMultipleIds();
-  const [games, setGames] = React.useState<any[]>([]);
+interface PredictionsProps {
+  games: any[];
+}
 
-  React.useEffect(
-    () => {
-      fetchValueBets().then((res) => {
-        const fixturesIds: string[] = [];
-        res.data.forEach((x: any) => fixturesIds.push(x.fixture_id));
-
-        fetchFixturesByMultipleIds({ fixturesIds: fixturesIds.join(",") }).then(
-          (res) => setGames(res.data)
-        );
-      });
-      // setGames(
-      //   mocksResponses.fixturesByMultiplesIds.data.filter((x) => x.probability)
-      // );
-    },
-    [
-      /*fetchFixturesByMultipleIds, fetchValueBets*/
-    ]
-  );
-
+export const Predictions: React.FC<PredictionsProps> = ({ games }) => {
   return (
     <div
       style={{

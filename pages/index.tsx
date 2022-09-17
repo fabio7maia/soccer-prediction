@@ -1,16 +1,17 @@
 import type { NextPage } from "next";
+import Link from "next/link";
 import React from "react";
-import { Predictions } from "@components";
+import { NavBar, PredictionsBetValues } from "@components";
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
   return (
-    <div className="bg-gray-200 min-h-screen min-w-screen text-gray-800">
-      <div className="text-5xl text-center">Soccer Prediction</div>
-      <div className="pt-10">
-        <Predictions />
+    <>
+      <NavBar />
+      <div className="my-10">
+        <PredictionsBetValues />
       </div>
-    </div>
+    </>
   );
 };
 
-export default Home;
+export default Page;
